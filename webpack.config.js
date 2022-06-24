@@ -25,7 +25,10 @@ module.exports = {
     historyApiFallback: true
   },
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js', 'scss', 'css'],
+    alias: {
+      '@': path.join(__dirname, 'src')
+    }
   },
   module: {
     rules: [
